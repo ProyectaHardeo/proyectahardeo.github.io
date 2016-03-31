@@ -29,15 +29,18 @@
       <a href="#">Link 3</a>
     </div>
   </li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Dropdown</a>
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">PROYECTOS</a>
     <div class="dropdown-content" id="myDropdown">
       <a href="#">Link a</a>
       <a href="#">Link b</a>
       <a href="#">Link c</a>
     </div>
+  </li>
+  
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+ 
   </ul>
 </head>
 <body>
@@ -86,13 +89,19 @@ window.onclick = function(e) {
 }
 </script>
 
-<!--Boton desplegable myOtherDropdown-->
+<!--Boton desplegable Dropdown3
+para introducir un nuevo boton hay que cambiar el nombre de
+la funcion y el getElementById
+en el script, en el onclick y en el id
+-->
+
+
 
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myOtherFunction() {
-    document.getElementById("myOtherDropdown").classList.toggle("show");
+function dropdown3Function() {
+    document.getElementById("Dropdown3").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -111,19 +120,13 @@ window.onclick = function(e) {
 </script>
 
 
-<!--Boton desplegable Dropdown3
-para introducir un nuevo boton hay que cambiar el nombre de
-la funcion y el getElementById
-en el script, en el onclick y en el id
--->
-
-
+<!--Boton desplegable myOtherDropdown-->
 
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function dropdown3Function() {
-    document.getElementById("Dropdown3").classList.toggle("show");
+function myOtherFunction() {
+    document.getElementById("myOtherDropdown").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
