@@ -1,4 +1,9 @@
 <?php
 echo 'Enviando correo';
-mail("proyecta.hardeo@gmail.com","Aqui el asunto del correo", "Hola esto es un correo de prueba");
+$to = "aquiuncorreo@aprenderaprogramar.com";
+$subject = "Correo en prueba";
+$txt = "Hola es un placer saludar desde el correo en pruebas!";
+$headers = "From: aquiotrocorreo@ejemplo.com" . "\r\n" .
+"CC: yaquiotrocorreocomocc@aprenderaprogramar.com";
+mail($to,$subject,$txt,$headers);
 ?>
