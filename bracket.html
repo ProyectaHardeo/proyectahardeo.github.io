@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	
+<meta charset="UTF-8">
+<header>
+	<title>ProyectaHardeo</title>
+	<div id="headerFijo">
+		<img src="img/logo.svg" style="width:80px;height:100%;"/>
+	</div>
+</header>
+<head>
+<link rel="stylesheet" href="css/estilo.css" type="text/css" />
+
+<!--BOTONES DEL MENU-->
+<ul>
+  <li class="active"><a href="index.html">INICIO</a></li>
+  
+ <!-- <li><a href="#news">News</a></li> -->
+  <li><a href="#empresa">ACERCA DE</a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="funcion2()">EXPERIENCIA</a>
+    <div class="dropdown-content" id="botonlista">
+      <a href="bracket.html">Impresión 3D para pruebas de forma</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="funcion3()">SECTORES</a>
+    <div class="dropdown-content" id="botonlista">
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+      <a href="#">Link 6</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="funcion5()">APLICACIONES</a>
+    <div class="dropdown-content" id="botonlista">
+      <a href="#">Diseño mecánico</a>
+      <a href="#">Documentación gráfica</a>
+      <a href="#">Modelos de cálculo</a>
+    </div>
+  </li>
+
+  <li><a href="contacto.html">CONTACTO</a></li>
+ 
+  </ul>
+<!--FIN DE LOS BOTONES DEL MENU-->
+
+<!--INICIO DEL ESTILO-->
+
+<style>
+
+	h1 {
+		font-size:25px;
+	}
+	
+	h6 {
+		font-size:16px;
+	}	
+
+	.seccion {
+		border-style: 1ps solid white;
+	}
+
+	#contenido {
+		
+	}
+	
+	video {
+		
+	}
+	
+	p {
+
+		
+	}
+</style>
+
+</head>
+
+<body>
+
+<div id="contenido">
+	<section>		
+<!--AQUI VA EL CONTENIDO DE CADA PAGINA-->
+
+<div id="contenido">
+	<h1>Impresión 3D para pruebas de forma</h1>
+			<section class="seccion">
+				<table>
+				<tr>
+					
+				<td align="justify" margin-top="0px">
+					<h3>Sintel</h3>
+						<h4>Nuevo cortometraje de Blender</h4>
+						<p>Contenido del articulo contenido del articulo contenido del articulo 
+					contenido del artuculo 
+					Contenido del articulo
+					Contenido del articulo
+					Contenido del articulo
+					contenido del articulocontenido del artuculo 
+					Contenido del articulo
+					Contenido del articulo</p>
+				</td>
+				
+				<td>
+					<!--capitulo 8.5- introduce video en html-->
+					<video controls="controls" width="880px" height="420px" preload="preload">
+						<source src="bracket/bracket.mp4" type="video/mp4" />
+Su navegador no soporta video. Haga click <a href="https://www.mozilla.org/es-ES/firefox/new/">AQUI</a> para descargar un navegador que soporte HTML5
+					</video>
+				</td>
+				
+				</tr>
+				</table>
+					
+					
+				</article>
+						
+			</section>
+			</div>
+	  
+<!--FIN DEL CONTENIDO DE LA PAGINA-->
+	</section>
+</div>
+
+<footer id="foot01">
+
+</script>
+			<!-- el siguiente script obtiene el año actual completo y devuelve un mensaje 
+					de derechos de autor en
+					el pie de página. Hay que declarar el id="foot01" dentro del inicio 
+					del footer para que
+					lo pueda emplear el script, así: <footer id="foot01">...</footer>-->
+			<script>
+				document.getElementById("foot01").innerHTML = "<p>&copy; " + new Date().getFullYear() + " Proyecta Hardeo. All rights reserved.</p>";
+			</script>
+		
+</footer>
+
+</body>
+</html>
+
+<!--Script del boton drop-down clickeable-->
+
+<!--Boton desplegable botonlista-->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function funcion1() {
+    document.getElementById("botonlista").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
