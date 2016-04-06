@@ -10,16 +10,18 @@
 </header>
 <head>
 <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+
+<!--BOTONES DEL MENU-->
 <ul>
-  <li class="active"><a href="index.html">HOME</a></li>
+  <li class="active"><a href="index.html">INICIO</a></li>
   
  <!-- <li><a href="#news">News</a></li> -->
-  <li><a href="#empresa">EMPRESA</a></li>
+  <li><a href="#empresa">ACERCA DE</a></li>
   
   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" onclick="funcion2()">SERVICIOS</a>
+    <a href="javascript:void(0)" class="dropbtn" onclick="funcion2()">EXPERIENCIA</a>
     <div class="dropdown-content" id="botonlista">
-      <a href="#">Link 1</a>
+      <a href="bracket.html">Impresión 3D para pruebas de forma</a>
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
     </div>
@@ -35,23 +37,27 @@
   </li>
   
   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" onclick="funcion4()">PROYECTOS</a>
+    <a href="javascript:void(0)" class="dropbtn" onclick="funcion5()">APLICACIONES</a>
     <div class="dropdown-content" id="botonlista">
-      <a href="#">Link a</a>
-      <a href="#">Link b</a>
-      <a href="#">Link c</a>
+      <a href="#">Diseño mecánico</a>
+      <a href="#">Documentación gráfica</a>
+      <a href="#">Modelos de cálculo</a>
     </div>
   </li>
 
-  <li><a href="formulario.html">CONTACTO</a></li>
-  <li><a href="#english">ENGLISH</a></li>
+  <li><a href="contacto.html">CONTACTO</a></li>
  
   </ul>
+<!--FIN DE LOS BOTONES DEL MENU-->
+
 </head>
+
 <body>
 
 <div id="contenido">
-	<section>
+	<section>		
+<!--AQUI VA EL CONTENIDO DE CADA PAGINA-->
+
 	  <h2>Fixed Full-height Side Nav</h2>
 	  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
 	  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
@@ -62,7 +68,8 @@
 	  <p>Some text..</p>
 	  <p>Some text..</p>
 	  <p>Some text..</p>
-
+	  
+<!--FIN DEL CONTENIDO DE LA PAGINA-->
 	</section>
 </div>
 
@@ -75,7 +82,7 @@
 					del footer para que
 					lo pueda emplear el script, así: <footer id="foot01">...</footer>-->
 			<script>
-				document.getElementById("foot01").innerHTML = "<p>&copy; " + new Date().getFullYear() + " Proyecta Hardeo, RIF V-16198400-7. All rights reserved.</p>";
+				document.getElementById("foot01").innerHTML = "<p>&copy; " + new Date().getFullYear() + " Proyecta Hardeo. All rights reserved.</p>";
 			</script>
 		
 </footer>
