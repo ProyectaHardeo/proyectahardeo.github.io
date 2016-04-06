@@ -56,15 +56,19 @@
 
 	h1 {
 		font-size:25px;
+		padding: 10px 20px 15px 10px; 
 	}
 	h3 {
 		font-size:21px;
+		padding: 10px 20px 15px 10px; 
 		}
 	h4 {
 		font-size:18px;
+		padding: 10px 20px 15px 10px; 
 		}
 	h6 {
 		font-size:12px;
+		padding: 10px 20px 15px 10px; 
 	}	
 
 	.seccion {
@@ -78,18 +82,32 @@
 		-moz-border-radius: 10px 10px 7px 7px;
 	}
 	
-	video {
-		
+	video, img, iframe {
+		border-radius: 15px 15px 10px 10px;
+		-webkit-border-radius: 15px 15px 10px 10px;
+		-moz-border-radius: 15px 15px 10px 10px;
+		border: 1px solid white;
 	}
+
 	
 	p {
-		padding: 10px 50px 75px 100px; 
+		padding: 10px 20px 15px 10px; 
 		
 	}
-	
-	table tr td{
-		padding-top:0px;
+	table {
+		border-radius: 15px 15px 10px 10px;
+		-webkit-border-radius: 15px 15px 10px 10px;
+		-moz-border-radius: 15px 15px 10px 10px;
+		border: 1px solid black;
 	}
+
+	table tr td{
+		border-radius: 15px 15px 10px 10px;
+		-webkit-border-radius: 15px 15px 10px 10px;
+		-moz-border-radius: 15px 15px 10px 10px;
+		border: 1px solid white;
+	}
+
 </style>
 
 </head>
@@ -103,10 +121,10 @@
 <div id="contenido">
 	<h1>Impresión 3D para pruebas de forma</h1>
 			<section class="seccion">
-				<table>
-				<tr>
+	<table border="1" style="width:100%">
+		<tr>
 					
-				<td align="justify">
+		<td align="justify">
 					<h3>Sintel</h3>
 					<h4>Nuevo cortometraje de Blender</h4>
 					<p>Contenido del articulo contenido del
@@ -118,22 +136,18 @@
 					contenido del articulocontenido del artuculo 
 					Contenido del articulo
 					Contenido del articulo</p>
-				</td>
+		</td>
 
-				<td>
+		<td>
 					<!--capitulo 8.5- introduce video en html-->
 					<video controls="controls" width="680px" height="480px" preload="preload">
 						<source src="bracket/bracket.mp4" type="video/mp4" />
 Su navegador no soporta video. Haga click <a href="https://www.mozilla.org/es-ES/firefox/new/">AQUI</a> para descargar un navegador que soporte HTML5
 					</video>
-				</td>
+		</td>
 				
-				</tr>
-				</table>
-				
-				</br>
-				</br>
-<table>
+	</tr>
+
 	<tr>
 		<td align="justify">
 			<h3>Sintel</h3>
@@ -160,11 +174,7 @@ Su navegador no soporta video. Haga click <a href="https://www.mozilla.org/es-ES
 </p>
 		</td>
 	</tr>
-</table>				
-				</br>
-				</br>
-				
-<table>
+
 	<tr>
 		<td align="justify">
 			<h3>Sintel</h3>
