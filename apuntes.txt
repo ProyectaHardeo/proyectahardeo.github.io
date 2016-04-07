@@ -1,2 +1,0 @@
-1.- para la conversión de videos se usó https://ffmpeg.zeranoe.com/builds/
-2.- 
