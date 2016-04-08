@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	
+<meta charset="UTF-8">
+<header>
+	<title>ProyectaHardeo</title>
+	<div id="headerFijo">
+		<img src="img/logo.svg" style="width:80px;height:100%;"/>
+	</div>
+</header>
+<head>
+<link rel="stylesheet" href="css/estilo.css" type="text/css" />
+
+<!--BOTONES DEL MENU-->
+<ul>
+  <li class="active"><a href="index.html">INICIO</a></li>
+  
+ <!-- <li><a href="#news">News</a></li> -->
+  <li><a href="#empresa">ACERCA DE</a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="funcion2()">EXPERIENCIA</a>
+    <div class="dropdown-content" id="botonlista">
+      <a href="bracket.html">Impresiones 3D para pruebas de forma</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="funcion3()">SECTORES</a>
+    <div class="dropdown-content" id="botonlista">
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+      <a href="#">Link 6</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="funcion5()">APLICACIONES</a>
+    <div class="dropdown-content" id="botonlista">
+      <a href="#">CAD/CAE/CAM</a>
+      <a href="#">Documentación gráfica</a>
+      <a href="#">Modelos de cálculo</a>
+    </div>
+  </li>
+
+  <li><a href="contacto.html">CONTACTO</a></li>
+ 
+  </ul>
+<!--FIN DE LOS BOTONES DEL MENU-->
+
+</head>
+
+<body>
+
+<div id="contenido">
+	<section>		
+<!--AQUI VA EL CONTENIDO DE CADA PAGINA-->
+
+	  <h2>Fixed Full-height Side Nav</h2>
+	  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+	  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+	  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it). gadshsdfsdkjfhjdsfhksdfhs
+	  dkjfhksdjfsdkjfhsdkjfhsjdfhskdjhksdfjhskdfhsdkjfhskdfjhdsfkhsdfkjhsdfkjshdfkjsfhksdjfhkdsjfhksjdfhskjdfh</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  <p>Some text..</p>
+	  
+<!--FIN DEL CONTENIDO DE LA PAGINA-->
+	</section>
+</div>
+
+<footer id="foot01">
+
+</script>
+			<!-- el siguiente script obtiene el año actual completo y devuelve un mensaje 
+					de derechos de autor en
+					el pie de página. Hay que declarar el id="foot01" dentro del inicio 
+					del footer para que
+					lo pueda emplear el script, así: <footer id="foot01">...</footer>-->
+			<script>
+				document.getElementById("foot01").innerHTML = "<p>&copy; " + new Date().getFullYear() + " Proyecta Hardeo. All rights reserved.</p>";
+			</script>
+		
+</footer>
+
+</body>
+</html>
+
+<!--Script del boton drop-down clickeable-->
+
+<!--Boton desplegable botonlista-->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function funcion1() {
+    document.getElementById("botonlista").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
