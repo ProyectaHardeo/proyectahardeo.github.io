@@ -118,6 +118,18 @@ jQuery(function($) {
 		$('html, body').animate({scrollTop:target_top}, 600);
 		$("#portfolio-single").slideUp(500);
 	});
+	
+		// Close Portfolio Single View Boton al Final
+	$('#portfolio-single-wrap').on('click', '.close-folio-itemend',function(event) {
+		event.preventDefault();
+		var full_url = '#portfolio',
+		parts = full_url.split("#"),
+		trgt = parts[1],
+		target_offset = $("#"+trgt).offset(),
+		target_top = target_offset.top;
+		$('html, body').animate({scrollTop:target_top}, 600);
+		$("#portfolio-single").slideUp(500);
+	});
 
 	// Contact form
 	var form = $('#main-contact-form');
