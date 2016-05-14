@@ -1,0 +1,15 @@
+-plano en svg
+-3d obj
+-cae shaded image
+-video atornillando los m6 a la pieza (opcional)
+
+
+enlace del modelo: https://sketchfab.com/models/ead035ad1f444816b4f2a849de5a8bdd
+
+código de embebido del iframe:
+
+<iframe width="640" height="480" src="https://sketchfab.com/models/ead035ad1f444816b4f2a849de5a8bdd/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/models/ead035ad1f444816b4f2a849de5a8bdd?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Abrazadera Triple</a>
+    by <a href="https://sketchfab.com/proyectah?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">ProyectaHardeo</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
