@@ -23,7 +23,7 @@
   <link rel="shortcut icon" href="images/favicon.ico">
 </head><!--/head-->
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
 
   <!--.preloader-->
   <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
@@ -34,8 +34,8 @@
       <div class="carousel-inner">
         <div class="item active" style="background-image: url(images/slider/slider-1.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig"><!--Welcome to-->Bienvenidos a <span>Proyecta Hardeo</span></h1>
-            <p class="animated fadeInRightBig">De Damián Hardeo, Asesoría en el desarrollo de su producto</p>
+            <h1 class="animated fadeInLeftBig"><!--Welcome to-->Bienvenidos a <span itemprop="isicV4">Proyecta Hardeo</span></h1>
+            <p class="animated fadeInRightBig">De <span itemprop="author">Damián Hardeo</span>, Asesoría en el desarrollo de su producto</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Comienzo</a>
           </div>
         </div>
@@ -92,11 +92,11 @@
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
             <h2>Servicios</h2>
-            <p align="center">El enfoque de la firma está en darle valor agregado a su idea, llevándola a la realidad usando software CAD/CAE/CAM y asesorándole en su viabilidad técnica</p>
+            <p align="center">El enfoque de la firma está en darle valor agregado a su idea, llevándola a la realidad usando software CAD/CAE/CAM y asesorándole en viabilidad técnica</p>
           </div>
         </div> 
       </div>
-      <div class="text-center our-services">
+      <div class="text-center our-services" itemscope itemtype="http://schema.org/Service">
         <div class="row">
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="service-icon">
@@ -104,6 +104,7 @@
               <img src="images/servicio/servicio-1.png"/>
             </div>
             <div class="service-info">
+				<meta itemprop="serviceType" content="Asesoría en impresión 3D G-code " >
               <h3>Asesoría en impresión 3D</h3>
               <p align="center">Optimización del modelo y G-code para facilitar la manufactura aditiva, ahorro de material y tiempo</p>
             </div>
@@ -114,6 +115,7 @@
               <img src="images/servicio/servicio-2.png"/>
             </div>
             <div class="service-info">
+				<meta itemprop="serviceType" content="Diseño de producto productos 3D CAD redacción de solicitudes de patente" >
               <h3>Diseño de producto</h3>
               <p>Creación de productos 3D CAD y la comunicación visual asociada, redacción de solicitudes de patente</p>
             </div>
@@ -124,6 +126,7 @@
               <img src="images/servicio/servicio-3.png"/>
             </div>
             <div class="service-info">
+				<meta itemprop="serviceType" content="Documentación de detalle manuales ilustrados y planos" >
               <h3>Documentación de detalle</h3>
               <p>Hojas de cálculo, diagramas, manuales ilustrados y planos</p>
             </div>
@@ -134,6 +137,7 @@
               <img src="images/servicio/servicio-4.png"/>
             </div>
             <div class="service-info">
+				<meta itemprop="serviceType" content="Desarrollos mecánicos Diseño de mecanismos" >
               <h3>Desarrollos mecánicos</h3>
               <p>Diseño de mecanismos a partir de especificaciones técnicas, pruebas computarizadas</p>
             </div>
@@ -144,6 +148,7 @@
               <img src="images/servicio/servicio-5.png"/>
             </div>
             <div class="service-info">
+				<meta itemprop="serviceType" content="Ingeniería inversa Conversión de datos 2D a 3D" >
               <h3>Ingeniería inversa</h3>
               <p>Conversión de datos 2D a 3D, ajuste de piezas a superficies escaneadas</p>
             </div>
@@ -154,6 +159,7 @@
               <img src="images/servicio/servicio-6.png"/>
             </div>
             <div class="service-info">
+				<meta itemprop="serviceType" content="FEA y Simulación mecanica Análisis numérico computarizado" >
               <h3>FEA y Simulación</h3>
               <p>Análisis numérico computarizado, simulación de movimiento cinemático y dinámico</p>
             </div>
@@ -434,9 +440,9 @@ solicitudes de patente manejando lenguaje específico de la propiedad industrial
                 <img class="img-responsive" src="images/team/1.jpg" alt="">
               </div>
               <div class="member-info" itemscope itemtype="http://schema.org/Person"><!--Microdato Person-->
-                <h3 itemprop="givenName">Damián Hardeo</h3>
+                <h3 itemprop="isicV4">Damián Hardeo</h3>
                 <!--<h4>CEO &amp; Fundador</h4>-->
-                <p>Ingeniero Mecánico con experiencia en desarrollo de nuevos productos</p>
+                <p><span itemprop="jobTitle">Ingeniero Mecánico</span> con experiencia en desarrollo de producto</p>
               </div>
               <div class="social-icons">
                 <ul>
@@ -463,11 +469,11 @@ solicitudes de patente manejando lenguaje específico de la propiedad industrial
               </div>
               
            <div class="col-sm-3">
-              <div class="member-info">
+              <div class="member-info" itemscope itemtype="http://schema.org/Person">
                 <h3><a href="https://ve.linkedin.com/in/damianhardeo" target="_blank">Experiencia profesional</a></h3>
-                <h4>Proyectista.</h4>
-                <h4>Instructor universitario.</h4>
-                <h4>Diseñador mecánico.</h4>
+                <h4><span itemprop="jobTitle">Proyectista.</span></h4>
+                <h4><span>Instructor universitario.</span></h4>
+                <h4><span itemprop="jobTitle">Diseñador mecánico.</span></h4>
 				<h4>Planificador de mantenimiento.</h4>
 				<h4>Técnico electrónico de ventas.</h4>
 				<h4>Técnico electrónico de servicio.</h4>
@@ -837,14 +843,14 @@ solicitudes de patente manejando lenguaje específico de la propiedad industrial
               </form>   
             </div>-->
             <div class="col-sm-6">
-              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" itemscope itemtype="http://schema.org/Organization">
                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>-->
                 <ul class="address">
                  <!-- <li><i class="fa fa-phone"></i> <span> Teléfono:</span>  </li>-->
-                  <li><i class="fa fa-envelope"></i> <span> Email: </span><a href="mailto:proyecta.hardeo@gmail.com"> proyecta.hardeo@gmail.com</a></li>
+                  <li><i class="fa fa-envelope"></i> <span> Email: </span><a href="mailto:proyecta.hardeo@gmail.com"> <span itemprop="email">proyecta.hardeo@gmail.com</span></a></li>
                   <li><i class="fa fa-phone"></i> <span> Teléfono: </span> <a>+5804168612283</a></li>
                   <li><i class="fa fa-phone"></i> <span> Skype: </span> <a>rdhardeo</a></li>
-                  <li><i class="fa fa-map-marker"></i> <span> Ubicación: </span>Venezuela</li>
+                  <li><i class="fa fa-map-marker"></i> Ubicación: <span itemprop="nationality">Venezuela</span></li>
         <!--Crear la tienda online y colocar aquí su dirección-->
                   <li><i class="fa fa-globe"></i> <span> Website: </span> <a>http://proyectahardeo.github.io/</a></li>
                 </ul>
