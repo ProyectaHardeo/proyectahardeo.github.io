@@ -1,0 +1,1 @@
+Sube los archivos aquí, para crear una carpeta dale a add new file y en el nombre termínalo con una barra/ luego pon el nombre de un archivo .txt como éste y dale a commit changes, listo
